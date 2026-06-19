@@ -1,0 +1,240 @@
+[
+  {
+    "code": "TXYL1",
+    "series": "rainforest",
+    "seriesLabel": "雨林拓荒季",
+    "name": "气象探测专家 · 渐变毛衣无袖开衫",
+    "highlights": ["前胸开口0束缚", "独家版权"],
+    "fabric": "高弹线 · 亲肤柔软",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 99,
+    "image": "products/yl_green_sweater.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=697813967321"
+  },
+  {
+    "code": "TXYL2",
+    "series": "rainforest",
+    "seriesLabel": "雨林拓荒季",
+    "name": "飞跃者巡逻护卫 · 拼色卫衣假两件纯棉",
+    "highlights": ["袖口可翻", "灰黑绿拼色"],
+    "fabric": "100%纯棉 · 四季透气",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸38", "胸44", "胸49", "胸54", "胸60"],
+      "back": ["背25.5", "背29.5", "背33.5", "背37.5", "背41.5"],
+      "weight": ["5~8斤", "8~12斤", "12~17斤", "17~23斤", "23~30斤"]
+    },
+    "price": 185,
+    "image": "products/yl_hoodie.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=697002260044"
+  },
+  {
+    "code": "TXYL3",
+    "series": "rainforest",
+    "seriesLabel": "雨林拓荒季",
+    "name": "植物生长研习生 · 毛呢衬衫&牵引背带",
+    "highlights": ["自带反光牵引胸背", "尾部松紧调节"],
+    "fabric": "60%羊毛麦尔登呢 · 保暖耐磨",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸38", "胸44", "胸50", "胸56", "胸62"],
+      "back": ["背25", "背30", "背35", "背40", "背45"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~28斤"]
+    },
+    "price": 185,
+    "image": "products/yl_wool_shirt.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=697310305298"
+  },
+  {
+    "code": "TXYL4",
+    "series": "rainforest",
+    "seriesLabel": "雨林拓荒季",
+    "name": "飞跃者勘探队员 · 爆款冲锋衣户外防水防风",
+    "highlights": ["超炫反光条", "可翻立领", "背后小口袋"],
+    "fabric": "三防面料 · 耐磨防风 · 可调节魔术贴",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸39", "胸45", "胸50", "胸56", "胸62"],
+      "back": ["背23", "背25", "背28", "背33", "背37"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~28斤"]
+    },
+    "price": 265,
+    "image": "products/yl_windbreaker.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=697813251699"
+  },
+  {
+    "code": "TXHY1",
+    "series": "ocean",
+    "seriesLabel": "海洋巡航季",
+    "name": "探险号救生员 · 口水巾伊丽莎白圈二合一",
+    "highlights": ["防水材质", "视线无阻挡"],
+    "fabric": "防水材质 · 松紧调节防脱落",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["颈20", "颈25", "颈30", "颈35", "颈40"],
+      "back": ["—", "—", "—", "—", "—"],
+      "weight": ["2~6斤", "6~10斤", "10~14斤", "14~18斤", "18~24斤"]
+    },
+    "price": 45,
+    "image": "products/hy_collar.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=741066365558"
+  },
+  {
+    "code": "TXHY2",
+    "series": "ocean",
+    "seriesLabel": "海洋巡航季",
+    "name": "探险号瞭望者 · 无袖软毛衣中小型猫狗0束缚",
+    "highlights": ["前胸开口原创版型", "超软兔毛", "猫狗通用"],
+    "fabric": "超软兔毛 · 不掉毛不起球 · 弹性大",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 99,
+    "image": "products/hy_blue_sweater.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=748070808170"
+  },
+  {
+    "code": "TXHY3",
+    "series": "ocean",
+    "seriesLabel": "海洋巡航季",
+    "name": "探险号水手 · 棉服斗篷绑带披风狗狗冬季外套",
+    "highlights": ["多种捆绑方式", "适合各体型", "可叠穿"],
+    "fabric": "棉服填充保暖 · 多季节可用",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸40", "胸46", "胸52", "胸58", "胸64"],
+      "back": ["背28", "背33", "背38", "背43", "背48"],
+      "weight": ["6~10斤", "10~16斤", "16~22斤", "22~28斤", "28~35斤"]
+    },
+    "price": 315,
+    "image": "products/hy_quilted_poncho.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=748215009921"
+  },
+  {
+    "code": "TXHY4",
+    "series": "ocean",
+    "seriesLabel": "海洋巡航季",
+    "name": "探险号潜水员 · 户外牵引背包手提多功能宠物服装便携",
+    "highlights": ["可背可手提可牵引", "承重10kg"],
+    "fabric": "内侧透气网布 · 高承重结构",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸38", "胸45", "胸52", "胸58", "胸64"],
+      "back": ["背30", "背35", "背40", "背45", "背50"],
+      "weight": ["≤4kg", "≤6kg", "≤8kg", "≤10kg", "≤10kg"]
+    },
+    "price": 465,
+    "image": "products/hy_harness_vest.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=748287910622"
+  },
+  {
+    "code": "TXSM1",
+    "series": "desert",
+    "seriesLabel": "沙漠觅迹季",
+    "name": "沙漠向导 · 狗狗防晒服UPF50+两穿设计超轻超薄",
+    "highlights": ["SPF50+", "四面弹透气", "连帽两穿"],
+    "fabric": "专业防晒涂层 · 高弹性 · 户外必备",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸36", "胸42", "胸48", "胸54", "胸60"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 285,
+    "image": "products/sm_sun_protection.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=821526862721"
+  },
+  {
+    "code": "TXSM2",
+    "series": "desert",
+    "seriesLabel": "沙漠觅迹季",
+    "name": "沙海越野者 · 猫狗无袖毛领毛衣超软小众设计版型秋冬",
+    "highlights": ["胸前开叉原创版型", "超软兔毛", "猫狗通用"],
+    "fabric": "超软兔毛 · 不掉毛不起球 · 弹性大",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 109,
+    "image": "products/sm_fur_sweater.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=837608129158"
+  },
+  {
+    "code": "TXSM3",
+    "series": "desert",
+    "seriesLabel": "沙漠觅迹季",
+    "name": "生态管治员 · 狗狗毛绒提花卫衣保暖立领超绝质感冬季",
+    "highlights": ["特色毛毛交叉结", "超软毛茸茸", "预留牵引穿孔"],
+    "fabric": "提花工艺毛绒 · 内衬亲肤棉",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸38", "胸44", "胸49", "胸54", "胸60"],
+      "back": ["背25", "背29", "背33", "背37", "背41"],
+      "weight": ["5~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 245,
+    "image": "products/sm_fleece_hoodie.jpg",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=864516364259"
+  },
+  {
+    "code": "TXSM4",
+    "series": "desert",
+    "seriesLabel": "沙漠觅迹季",
+    "name": "环境卫士 · 可穿戴捡拾袋包+口水巾二合一狗狗出行便携",
+    "highlights": ["袋包+口水巾一体式", "出行便携", "多色可选"],
+    "fabric": "防水面料 · 可调节绑带",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["颈20", "颈25", "颈30", "颈35", "颈40"],
+      "back": ["—", "—", "—", "—", "—"],
+      "weight": ["2~6斤", "6~10斤", "10~14斤", "14~18斤", "18~24斤"]
+    },
+    "price": 68,
+    "image": "products/sm_bib.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=918183297938"
+  },
+  {
+    "code": "TXTX1-A",
+    "series": "polar",
+    "seriesLabel": "极地远征季",
+    "name": "洒水车司机 · 猫狗凉凉衣防掉毛网眼透气干湿两穿",
+    "highlights": ["冰感干湿两穿", "前开叉0束缚", "物理防晒", "独家版型"],
+    "fabric": "高弹网眼 · 冰感科技纤维",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 88,
+    "image": "products/tx_mesh_coat.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=918180009427"
+  },
+  {
+    "code": "TXTX1-B",
+    "series": "polar",
+    "seriesLabel": "极地远征季",
+    "name": "破冰船船员 · 夏季猫狗防晒UPF100+无袖旋转斜裁可调节",
+    "highlights": ["UPF100+", "无袖旋转斜裁", "超轻透气", "可调节"],
+    "fabric": "专业防晒面料 · UPF100+防护 · 高弹力",
+    "sizes": {
+      "headers": ["S", "M", "L", "XL", "XXL"],
+      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
+      "back": ["背26", "背30", "背34", "背38", "背42"],
+      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+    },
+    "price": 128,
+    "image": "products/tx_polar_cool.png",
+    "taobaoUrl": "https://item.taobao.com/item.htm?id=919142208062"
+  }
+]
