@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISTRICT11 — D11第十一区 · 宠物时尚品牌</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --black: #1a1a1a;
+  --dark: #2a2a2a;
+  --mid: #6a6a6a;
+  --light: #999;
+  --lighter: #c4c4c4;
+  --border: #e5e5e5;
+  --bg: #fafafa;
+  --white: #ffffff;
+  --accent-rainforest: #3d7a52;
+  --accent-ocean: #2b6088;
+  --accent-desert: #b8844f;
+  --accent-polar: #5a6a80;
+  --font-sans: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: opacity 0.3s ease;
+}
+body.lang-transition { opacity: 0.7; }
+
+/* ========== NAV ========== */
+.nav {
+  position: fixed; top:0; left:0; right:0;
+  z-index: 100;
+  padding: 0 48px; height: 56px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 0.5px solid transparent;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+.nav.scrolled { border-bottom-color: var(--border); }
+
+.nav-left { display: flex; align-items: center; gap: 32px; }
+
+.nav-logo img { height: 18px; display: block; object-fit: contain; }
+
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  text-decoration: none; color: var(--mid);
+  font-size: 11px; letter-spacing: 2px;
+  transition: color 0.3s ease; position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--black);
+  transition: width 0.3s var(--ease);
+}
+.nav-links a:hover { color: var(--black); }
+.nav-links a:hover::after { width: 100%; }
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex; align-items: center; gap: 2px;
+  background: none; border: 1px solid var(--border);
+  border-radius: 2px; padding: 4px;
+  cursor: pointer; transition: border-color 0.3s ease;
+  font-family: var(--font-sans);
+}
+.lang-toggle:hover { border-color: var(--mid); }
+.lang-btn {
+  font-size: 10px; letter-spacing: 1.5px;
+  padding: 3px 8px; border: none; background: none;
+  color: var(--lighter); cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+  font-family: var(--font-sans);
+}
+.lang-btn.active { color: var(--white); background: var(--black); }
+.lang-btn:not(.active):hover { color: var(--mid); }
+
+/* ========== SCROLL PROGRESS ========== */
+.scroll-progress {
+  position: fixed; top:0; left:0;
+  width: 0%; height: 2px;
+  background: var(--black); z-index: 101;
+  transition: width 0.1s linear;
+}
+
+/* ========== HERO ========== */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative; background: var(--white);
+  text-align: center; padding: 120px 32px 80px;
+  overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(61,122,82,0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(43,96,136,0.03) 0%, transparent 60%);
+  animation: heroBg 12s ease-in-out infinite alternate;
+}
+@keyframes heroBg { 0%{opacity:0.6} 100%{opacity:1} }
+
+.hero-inner { position: relative; z-index: 1; }
+
+.hero-logo img {
+  height: clamp(48px, 8vw, 88px);
+  display: block; object-fit: contain;
+}
+@keyframes heroReveal {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.hero-sublogo {
+  font-size: 11px; letter-spacing: 6px;
+  color: var(--mid); text-transform: uppercase;
+  margin-top: 12px; margin-bottom: 48px;
+  opacity: 0; animation: heroReveal 1.2s var(--ease) 0.5s forwards;
+}
+.hero-quote {
+  max-width: 500px; margin: 0 auto;
+  font-size: 14px; font-weight: 300;
+  color: var(--mid); line-height: 2.2; letter-spacing: 0.5px;
+  opacity: 0; animation: heroReveal 1.2s var(--ease) 0.8s forwards;
+}
+.hero-quote em { font-style: normal; font-weight: 500; color: var(--black); }
+
+.hero-scroll {
+  position: absolute; bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center;
+  gap: 6px;
+  opacity: 0; animation: heroReveal 1.2s var(--ease) 1.2s forwards;
+}
+.hero-scroll span { font-size: 9px; letter-spacing: 3px; color: var(--light); text-transform: uppercase; }
+.scroll-line { width:1px; height:32px; position: relative; overflow: hidden; background: var(--border); }
+.scroll-line::after {
+  content:''; position: absolute; top:-100%; width:100%; height:100%;
+  background: var(--black); animation: scrollDown 2s ease-in-out infinite;
+}
+@keyframes scrollDown { 0%{top:-100%} 50%{top:100%} 100%{top:100%} }
+
+/* ========== SECTION ========== */
+.section { padding: 80px 48px; max-width: 1240px; margin: 0 auto; }
+
+.sec-tag {
+  font-size: 10px; letter-spacing: 4px;
+  color: var(--lighter); text-transform: uppercase;
+  margin-bottom: 16px; display: inline-block;
+}
+.sec-title {
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 400; letter-spacing: 1px;
+  line-height: 1.4; margin-bottom: 20px; color: var(--black);
+}
+.sec-desc {
+  font-size: 13px; color: var(--mid); line-height: 2;
+  max-width: 540px; margin-bottom: 48px;
+}
+
+/* ========== CONCEPT ========== */
+.concept { padding: 100px 48px; background: var(--bg); }
+.concept-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 64px; align-items: start;
+}
+.concept-left .sec-title { font-size: clamp(26px, 3.5vw, 40px); font-weight: 300; line-height: 1.5; }
+.concept-right { padding-top: 8px; }
+.concept-right p { font-size: 13px; color: var(--mid); line-height: 2.1; margin-bottom: 16px; }
+.concept-right p:first-child { color: var(--dark); }
+
+/* ========== PHILOSOPHY ========== */
+.philosophy-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: var(--border); margin-top: 48px;
+}
+.phil-card { background: var(--white); padding: 40px 36px; transition: background 0.4s ease; cursor: default; }
+.phil-card:hover { background: var(--bg); }
+.phil-card-key { font-size: 13px; font-weight: 600; letter-spacing: 3px; margin-bottom: 16px; color: var(--black); }
+.phil-card-val { font-size: 12.5px; color: var(--mid); line-height: 2; }
+
+/* ========== SERIES TABS ========== */
+.series-bar { padding: 60px 48px 0; background: var(--bg); }
+.series-bar-inner { max-width: 1240px; margin: 0 auto; }
+.series-filters { display: flex; gap: 0; flex-wrap: wrap; }
+.series-filter {
+  padding: 10px 24px; background: none; border: none;
+  font-family: var(--font-sans); font-size: 12px;
+  color: var(--light); cursor: pointer;
+  letter-spacing: 2px; position: relative;
+  transition: color 0.3s ease;
+}
+.series-filter::after {
+  content:''; position: absolute;
+  bottom:0; left:24px; right:24px;
+  height: 1.5px; background: transparent;
+  transition: background 0.3s ease;
+}
+.series-filter.active { color: var(--black); font-weight: 500; }
+.series-filter.active::after { background: var(--black); }
+.series-filter:hover { color: var(--mid); }
+
+/* ========== ARCHIVE GRID ========== */
+.archive-section { padding: 40px 48px 100px; background: var(--bg); }
+.archive-section-inner { max-width: 1240px; margin: 0 auto; }
+
+.archive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.archive-card {
+  background: var(--white); border: 1px solid var(--border);
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), opacity 0.4s ease;
+  opacity: 1; transform: translateY(0);
+  animation: cardFadeIn 0.6s var(--ease) both;
+}
+.archive-card.hidden { display: none; }
+
+@keyframes cardFadeIn {
+  from { opacity:0; transform: translateY(12px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.archive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+}
+
+.archive-card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 0.5px solid var(--border);
+}
+.archive-card-title { font-size: 10px; letter-spacing: 3px; font-weight: 600; color: var(--black); }
+.archive-card-code { font-size: 10px; letter-spacing: 2px; color: var(--light); font-family: monospace; }
+
+.archive-card-body { display: grid; grid-template-columns: 1fr 200px; min-height: 240px; }
+
+.archive-card-info { padding: 18px 20px; }
+.archive-card-row { margin-bottom: 14px; }
+.archive-card-label { font-size: 10px; letter-spacing: 2px; color: var(--lighter); margin-bottom: 5px; text-transform: uppercase; }
+.archive-card-text { font-size: 12px; color: var(--dark); line-height: 1.8; }
+.archive-card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
+.archive-card-tag {
+  font-size: 9.5px; letter-spacing: 0.5px; color: var(--mid);
+  padding: 3px 9px; border: 0.5px solid var(--border); border-radius: 1px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.archive-card:hover .archive-card-tag { border-color: var(--lighter); }
+
+.archive-card-sizes { margin-top: 6px; }
+.size-table { width: 100%; border-collapse: collapse; font-size: 9.5px; }
+.size-table th, .size-table td {
+  padding: 4px 3px; text-align: center;
+  border: 0.5px solid var(--border); color: var(--dark);
+}
+.size-table th { background: var(--bg); font-weight: 500; letter-spacing: 0.5px; color: var(--mid); font-size: 9px; }
+
+.archive-card-photo {
+  position: relative; display: flex;
+  align-items: center; justify-content: center;
+  overflow: hidden; border-left: 0.5px solid var(--border);
+  transition: background 0.5s ease;
+}
+.archive-card-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s var(--ease), opacity 0.4s ease;
+}
+.archive-card:hover .archive-card-photo img { transform: scale(1.08); }
+
+/* Series color accents */
+.series-rainforest .archive-card-photo { background: #eef5ee; }
+.series-ocean .archive-card-photo { background: #edf2f7; }
+.series-desert .archive-card-photo { background: #fdf6ec; }
+.series-polar .archive-card-photo { background: #eef0f4; }
+
+/* === CARD FOOTER with Taobao btn === */
+.archive-card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px; border-top: 0.5px solid var(--border);
+  background: var(--bg); gap: 12px; flex-wrap: wrap;
+}
+.archive-card-price-block { display: flex; align-items: baseline; gap: 6px; }
+.archive-card-price-label { font-size: 9px; letter-spacing: 2px; color: var(--lighter); }
+.archive-card-price {
+  font-size: 16px; font-weight: 600; color: var(--black); letter-spacing: 0.5px;
+}
+
+.taobao-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 7px 16px;
+  background: var(--black); color: var(--white);
+  text-decoration: none; font-size: 10px;
+  letter-spacing: 1.5px; white-space: nowrap;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.taobao-btn:hover { background: #333; transform: translateY(-1px); }
+.taobao-btn:active { transform: translateY(0); }
+
+/* ========== ABOUT ========== */
+.about { padding: 100px 48px; }
+.about-inner {
+  max-width: 1240px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px; align-items: start;
+}
+.about-text p { font-size: 13px; color: var(--mid); line-height: 2.1; margin-bottom: 16px; }
+.about-text p:first-of-type { color: var(--dark); font-weight: 400; }
+
+.about-team { margin-top: 40px; padding-top: 32px; border-top: 0.5px solid var(--border); }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.team-item {
+  display: flex; gap: 12px; align-items: center;
+  padding: 12px; border: 0.5px solid transparent;
+  transition: border-color 0.3s ease, background 0.3s ease; cursor: default;
+}
+.team-item:hover { border-color: var(--border); background: var(--bg); }
+.team-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bg); display: flex;
+  align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; color: var(--lighter);
+  flex-shrink: 0; transition: background 0.3s ease, color 0.3s ease;
+}
+.team-item:hover .team-avatar { background: var(--black); color: var(--white); }
+.team-name { font-size: 12px; font-weight: 500; color: var(--black); }
+.team-role { font-size: 10px; color: var(--light); letter-spacing: 1px; margin-top: 2px; }
+
+.about-visual { position: sticky; top: 80px; display: flex; align-items: center; justify-content: center; }
+.about-visual-box {
+  width: 100%; aspect-ratio: 1; max-width: 320px;
+  border: 0.5px solid var(--border);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+.about-visual-box:hover { border-color: var(--black); background: var(--black); }
+.about-visual-d11 {
+  font-size: 42px; font-weight: 900; letter-spacing: 5px;
+  color: var(--black); font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: color 0.4s ease;
+}
+.about-visual-box:hover .about-visual-d11 { color: var(--white); }
+.about-visual-tag { font-size: 9px; letter-spacing: 3px; color: var(--lighter); text-transform: uppercase; transition: color 0.4s ease; }
+.about-visual-box:hover .about-visual-tag { color: rgba(255,255,255,0.3); }
+.about-visual-line { width: 32px; height: 1px; background: var(--border); margin: 16px 0; transition: background 0.4s ease; }
+.about-visual-box:hover .about-visual-line { background: rgba(255,255,255,0.2); }
+
+/* ========== CONNECT ========== */
+.connect { padding: 80px 48px; background: var(--black); color: var(--white); text-align: center; }
+.connect .sec-tag { color: rgba(255,255,255,0.3); }
+.connect .sec-title { color: var(--white); }
+.connect .sec-desc { color: rgba(255,255,255,0.5); margin-left: auto; margin-right: auto; }
+.connect-links { display: flex; gap: 16px; justify-content: center; margin-top: 40px; }
+.connect-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 32px; border: 0.5px solid rgba(255,255,255,0.2);
+  color: var(--white); text-decoration: none;
+  font-size: 11px; letter-spacing: 2px;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+.connect-link:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
+
+/* ========== FOOTER ========== */
+.footer {
+  padding: 40px 48px;
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1240px; margin: 0 auto;
+}
+.footer-left { font-size: 10px; color: var(--lighter); letter-spacing: 1px; }
+.footer-right { display: flex; gap: 28px; }
+.footer-right a { font-size: 10px; color: var(--lighter); text-decoration: none; letter-spacing: 1px; transition: color 0.3s ease; }
+.footer-right a:hover { color: var(--black); }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .nav { padding: 0 24px; }
+  .section { padding: 60px 24px; }
+  .concept { padding: 60px 24px; }
+  .concept-inner { grid-template-columns: 1fr; gap: 40px; }
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .about-inner { grid-template-columns: 1fr; gap: 48px; }
+  .about-visual { position: static; }
+  .archive-grid { grid-template-columns: 1fr; }
+  .series-bar { padding: 40px 24px 0; }
+  .archive-section { padding: 30px 24px 80px; }
+  .connect { padding: 60px 24px; }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero-logo img { height: 48px; }
+  .archive-card-body { grid-template-columns: 1fr; }
+  .archive-card-photo { border-left: none; border-top: 0.5px solid var(--border); min-height: 180px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .connect-links { flex-direction: column; align-items: center; }
+  .footer { flex-direction: column; gap: 16px; text-align: center; }
+  .series-filter { padding: 10px 16px; font-size: 11px; }
+}
+
+/* ========== SCROLL REVEAL ========== */
+.reveal {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ========== LOADING STATE ========== */
+.archive-loading {
+  grid-column: 1 / -1; text-align: center;
+  padding: 60px 0; font-size: 12px;
+  letter-spacing: 3px; color: var(--lighter);
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <div class="nav-left">
+    <a href="#home" class="nav-logo"><img src="logo.png" alt="DISTRICT11"></a>
+    <ul class="nav-links">
+      <li><a href="#concept" data-zh="概念" data-en="Concept">概念</a></li>
+      <li><a href="#philosophy" data-zh="理念" data-en="Philosophy">理念</a></li>
+      <li><a href="#archive" data-zh="织物档案" data-en="Fabric Archive">织物档案</a></li>
+      <li><a href="#about" data-zh="关于" data-en="About">关于</a></li>
+    </ul>
+  </div>
+  <button class="lang-toggle" id="langToggle" title="Switch Language">
+    <button class="lang-btn active" data-lang="zh" id="langZh">中</button>
+    <button class="lang-btn" data-lang="en" id="langEn">EN</button>
+  </button>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-logo"><img src="logo.png" alt="DISTRICT11"></div>
+    <p class="hero-sublogo" data-zh="D11第十一区 · 宠物时尚品牌 · Since 2021" data-en="D11 District11 · Pet Fashion Brand · Since 2021"></p>
+    <p class="hero-quote" id="heroQuote">
+      <span data-zh="以宠物视角为主导的<em>平行宇宙</em>" data-en="A <em>parallel universe</em> led by the pet's perspective"></span><br>
+      <span data-zh="0.44米内，是亲密关系的舒适圈" data-en="Within 0.44m lies the comfort zone of intimacy"></span><br>
+      <span data-zh="不设限，不跟随" data-en="No limits, no followers"></span><br>
+      <span data-zh="创造人与宠物共同生活的新方式" data-en="Creating new ways for humans and pets to live together"></span>
+    </p>
+  </div>
+  <div class="hero-scroll">
+    <span data-zh="向下滚动" data-en="Scroll">向下滚动</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Concept -->
+<section class="concept reveal" id="concept">
+  <div class="concept-inner">
+    <div class="concept-left">
+      <p class="sec-tag">Concept</p>
+      <h2 class="sec-title" data-zh="别致设计<br>用心织造" data-en="Exquisite Design<br>Woven with Heart">别致设计<br>用心织造</h2>
+    </div>
+    <div class="concept-right" id="conceptText">
+      <p data-zh="DISTRICT11 第十一区，自2021年启航的宠物时尚品牌。这里拥有一套与众不同的文明守则——在此生活的所有公民都可以在四脚兽陪伴下，自由选择热爱的生活方式。" data-en="DISTRICT11, a pet fashion brand that set sail in 2021. Here exists a unique code of civilization — all citizens living here can freely choose their beloved lifestyle accompanied by four-legged companions."></p>
+      <p data-zh="任何小生命，都可以参与到D11的探索中：常年高温潮湿的危险雨林、藏身海底神秘的亚特兰蒂斯带、沙虫肆虐险峻的无边沙漠、无人之境……等待被开启。" data-en="Any little life can join D11's exploration: the perilous rainforest of perpetual heat and humidity, the mysterious Atlantis belt hidden under the sea, the treacherous boundless desert where sandworms ravage, the uninhabited territory... waiting to be unlocked."></p>
+      <p data-zh="D11第十一区，人与宠物心中的乌托邦。" data-en="D11 District11 — the utopia in the hearts of humans and pets."></p>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="section reveal" id="philosophy">
+  <p class="sec-tag">Philosophy</p>
+  <h2 class="sec-title" data-zh="设计理念" data-en="Design Philosophy">设计理念</h2>
+  <p class="sec-desc" data-zh="从概念出发，以创新设计灵感，为每件产品赋予角色化叙事。" data-en="Starting from concept, using innovative design inspiration to give each product a role-based narrative."></p>
+  <div class="philosophy-grid" id="philGrid">
+    <div class="phil-card">
+      <div class="phil-card-key" data-zh="概念先行" data-en="Concept First">概念先行</div>
+      <div class="phil-card-val" data-zh="概念至上，辅以创新设计灵感，为每件产品赋予角色化叙事。每件织物都有它自己的世界观和使命。" data-en="Concept first, supplemented by innovative design inspiration, giving each product a role-based narrative. Every fabric has its own worldview and mission."></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-key" data-zh="功能多元" data-en="Multi-Function">功能多元</div>
+      <div class="phil-card-val" data-zh="精心雕琢每一寸细节，提供实用、舒适、时尚、独特的体验。前胸开口原创版型、反光牵引胸背、可调节魔术贴。" data-en="Meticulously crafting every inch of detail, providing practical, comfortable, fashionable, and unique experiences. Original front-opening design, reflective harness, adjustable velcro."></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-key" data-zh="独树一帜" data-en="One of a Kind">独树一帜</div>
+      <div class="phil-card-val" data-zh="专注线下实体，坚持原创版型，选用人成衣面料与精良工艺。独家版型版权无同款不撞衫。" data-en="Focus on offline physical stores, insist on original patterns, select human garment fabrics with exquisite craftsmanship. Exclusive pattern copyright, no duplicates, no accidental matches."></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-key" data-zh="打破传统" data-en="Break Tradition">打破传统</div>
+      <div class="phil-card-val" data-zh="深度探寻市场稀缺的宠物产品美学，结合功能性拓展更多设计可能。四季场景，无限探索。" data-en="Deeply exploring the scarce pet product aesthetics in the market, combining functionality to expand more design possibilities. Four-season scenarios, infinite exploration."></div>
+    </div>
+  </div>
+</section>
+
+<!-- Archive Header -->
+<div class="series-bar reveal">
+  <div class="series-bar-inner">
+    <p class="sec-tag" style="margin-bottom:12px;">Fabric Archive</p>
+    <h2 class="sec-title" style="margin-bottom:24px;" data-zh="织物档案" data-en="Fabric Archive">织物档案</h2>
+    <div class="series-filters" id="seriesFilters">
+      <button class="series-filter active" data-series="all" data-zh="全部" data-en="All">全部</button>
+      <button class="series-filter" data-series="rainforest" data-zh="/ 雨林拓荒季 /" data-en="/ Rainforest /">/ 雨林拓荒季 /</button>
+      <button class="series-filter" data-series="ocean" data-zh="/ 海洋巡航季 /" data-en="/ Ocean /">/ 海洋巡航季 /</button>
+      <button class="series-filter" data-series="desert" data-zh="/ 沙漠觅迹季 /" data-en="/ Desert /">/ 沙漠觅迹季 /</button>
+      <button class="series-filter" data-series="polar" data-zh="/ 极地远征季 /" data-en="/ Polar /">/ 极地远征季 /</button>
+    </div>
+  </div>
+</div>
+
+<!-- Archive Grid — dynamically rendered -->
+<section class="archive-section reveal" id="archive">
+  <div class="archive-section-inner">
+    <div class="archive-grid" id="archiveGrid">
+      <div class="archive-loading" data-zh="加载织物档案…" data-en="Loading fabric archive…">加载织物档案…</div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about reveal" id="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <p class="sec-tag">About</p>
+      <h2 class="sec-title" data-zh="YOU HAD ME<br>AT HELLO." data-en="YOU HAD ME<br>AT HELLO.">YOU HAD ME<br>AT HELLO.</h2>
+      <p data-zh="品牌DISTRICT11创立于2021年。宠物身上的每一分可爱，都来自于主人的喜爱。真正时尚独特且舒适性高的服装，将为人与宠物交互赋予新的意义。" data-en="Brand DISTRICT11 was founded in 2021. Every bit of cuteness on pets comes from their owner's love. Truly fashionable, unique, and highly comfortable clothing will give new meaning to human-pet interaction."></p>
+      <p data-zh="我们打造了全新的宠物社区，并根据宠物的心情、使用场景、性格，准备了不同属性的服装。每一位主人一起，成为它们活泼与童真的最坚实保护。" data-en="We have built a brand-new pet community, and prepared clothing with different attributes according to pets' moods, usage scenarios, and personalities. Every owner together becomes the strongest protection for their liveliness and innocence."></p>
+      <p data-zh="我们平等地尊重以及爱护每一个诞生在世界上的小生命，希望开启全新的宠物品牌风格，能让喜欢不同风格的宠物主有更多的选择。" data-en="We equally respect and care for every little life born into this world, hoping to open up a brand-new pet brand style, allowing pet owners who like different styles to have more choices."></p>
+      <div class="about-team">
+        <p style="font-size:10px;letter-spacing:3px;color:var(--light);margin-bottom:12px;" data-zh="创始团队" data-en="FOUNDING TEAM">创始团队</p>
+        <div class="team-grid">
+          <div class="team-item">
+            <div class="team-avatar">C</div>
+            <div>
+              <div class="team-name">Cirenia Zhao</div>
+              <div class="team-role">BM / PM</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-avatar">N</div>
+            <div>
+              <div class="team-name">Niki Wu</div>
+              <div class="team-role">Chief Designer</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-avatar">D</div>
+            <div>
+              <div class="team-name">Dreamer</div>
+              <div class="team-role">Inspiration Muse</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-avatar">Dr</div>
+            <div>
+              <div class="team-name">Drumsticks</div>
+              <div class="team-role">Inspiration Muse</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-visual-box">
+        <div class="about-visual-d11">D11</div>
+        <div class="about-visual-tag">District11</div>
+        <div class="about-visual-tag">Pet Fashion Brand</div>
+        <div class="about-visual-line"></div>
+        <div class="about-visual-tag">Since 2021</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Connect -->
+<section class="connect reveal" id="contact">
+  <p class="sec-tag">Connect</p>
+  <h2 class="sec-title" data-zh="District11 欢迎你的加入与探索" data-en="District11 Welcomes Your Joining and Exploration">District11 欢迎你的加入与探索</h2>
+  <p class="sec-desc" data-zh="关注我们的社交平台，获取新品资讯与限定优惠" data-en="Follow our social platforms for new product updates and exclusive offers">关注我们的社交平台，获取新品资讯与限定优惠</p>
+  <div class="connect-links">
+    <a href="#" class="connect-link" data-zh="小红书 ↗" data-en="Xiaohongshu ↗">小红书 ↗</a>
+    <a href="#" class="connect-link" data-zh="淘宝店铺 ↗" data-en="Taobao Store ↗">淘宝店铺 ↗</a>
+    <a href="#" class="connect-link" data-zh="微信社群 ↗" data-en="WeChat Community ↗">微信社群 ↗</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-left">&copy; 2025 DISTRICT11 D11第十一区</div>
+  <div class="footer-right">
+    <a href="#" data-zh="隐私政策" data-en="Privacy Policy">隐私政策</a>
+    <a href="#" data-zh="服务条款" data-en="Terms of Service">服务条款</a>
+    <a href="#" data-zh="联系我们" data-en="Contact Us">联系我们</a>
+  </div>
+</footer>
+
+<script>
+/* ========== LANGUAGE MANAGER ========== */
+let currentLang = 'zh';
+
+const LANG = {
+  zh: {
+    concept: '概念', philosophy: '理念', archive: '织物档案', about: '关于',
+    scroll: '向下滚动', loading: '加载织物档案…',
+    retailPrice: '零售价', comingSoon: '即将上架',
+    buyOnTaobao: '去淘宝购买 ↗',
+    all: '全部',
+    series: { rainforest: '雨林拓荒季', ocean: '海洋巡航季', desert: '沙漠觅迹季', polar: '极地远征季' },
+  },
+  en: {
+    concept: 'Concept', philosophy: 'Philosophy', archive: 'Fabric Archive', about: 'About',
+    scroll: 'Scroll', loading: 'Loading fabric archive…',
+    retailPrice: 'Retail Price', comingSoon: 'Coming Soon',
+    buyOnTaobao: 'Buy on Taobao ↗',
+    all: 'All',
+    series: { rainforest: 'Rainforest Frontier', ocean: 'Ocean Voyage', desert: 'Desert Tracker', polar: 'Polar Expedition' },
+  }
+};
+
+function switchLang(lang) {
+  if (lang === currentLang) return;
+  currentLang = lang;
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+  // Update lang buttons
+  document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+
+  // Update all [data-zh][data-en] elements
+  document.querySelectorAll('[data-zh][data-en]').forEach(el => {
+    const newText = lang === 'zh' ? el.dataset.zh : el.dataset.en;
+    if (newText.includes('<')) {
+      el.innerHTML = newText;
+    } else {
+      el.textContent = newText;
+    }
+  });
+
+  // Update series filters
+  document.querySelectorAll('.series-filter').forEach(btn => {
+    const zh = btn.dataset.zh, en = btn.dataset.en;
+    if (zh && en) btn.textContent = lang === 'zh' ? zh : en;
+  });
+
+  // Re-render archive grid with new language
+  if (allProducts.length > 0) {
+    renderArchiveGrid(document.querySelector('.series-filter.active')?.dataset.series || 'all');
+  }
+
+  // Save preference
+  localStorage.setItem('d11-lang', lang);
+}
+
+/* ========== PRODUCTS RENDER ========== */
+const SERIES_META = {
+  rainforest: { labelZh: '雨林拓荒季', labelEn: 'Rainforest Frontier', color: '#3d7a52' },
+  ocean:     { labelZh: '海洋巡航季', labelEn: 'Ocean Voyage', color: '#2b6088' },
+  desert:     { labelZh: '沙漠觅迹季', labelEn: 'Desert Tracker', color: '#b8844f' },
+  polar:      { labelZh: '极地远征季', labelEn: 'Polar Expedition', color: '#5a6a80' },
+};
+
+function renderSizeTable(sizes) {
+  let html = '<table class="size-table"><tr>';
+  for (const h of sizes.headers) html += `<th>${h}</th>`;
+  html += '</tr><tr>';
+  for (const c of sizes.chest) html += `<td>${c}</td>`;
+  html += '</tr><tr>';
+  for (const b of sizes.back)  html += `<td>${b}</td>`;
+  html += '</tr><tr>';
+  for (const w of sizes.weight) html += `<td>${w}</td>`;
+  html += '</tr></table>';
+  return html;
+}
+
+function isMobile() {
+  return /Android|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 640;
+}
+
+function getTaobaoUrl(url) {
+  if (!url || url === '#') return null;
+  // On mobile, convert to deeplink format
+  if (isMobile() && url.includes('item.taobao.com/item.htm?id=')) {
+    const match = url.match(/id=(\d+)/);
+    if (match) return `taobao://item.taobao.com/item.htm?id=${match[1]}`;
+  }
+  return url;
+}
+
+function renderCard(p, index) {
+  const meta = SERIES_META[p.series] || {};
+  const delay = (index % 8) * 0.05;
+  const taobaoUrl = p.taobaoUrl && p.taobaoUrl !== '#' ? p.taobaoUrl : null;
+  const displayUrl = taobaoUrl ? getTaobaoUrl(taobaoUrl) : null;
+
+  const name = currentLang === 'en' && p.nameEn ? p.nameEn : p.name;
+  const highlights = currentLang === 'en' && p.highlightsEn ? p.highlightsEn : p.highlights;
+  const fabric = currentLang === 'en' && p.fabricEn ? p.fabricEn : p.fabric;
+  const seriesLabel = currentLang === 'en' && p.seriesLabelEn ? p.seriesLabelEn : (p.seriesLabel || '');
+
+  const buyText = currentLang === 'en' ? LANG.en.buyOnTaobao : LANG.zh.buyOnTaobao;
+  const retailText = currentLang === 'en' ? LANG.en.retailPrice : LANG.zh.retailPrice;
+  const comingText = currentLang === 'en' ? LANG.en.comingSoon : LANG.zh.comingSoon;
+
+  return `
+    <div class="archive-card series-${p.series}" data-series="${p.series}" style="animation-delay:${delay}s">
+      <div class="archive-card-header">
+        <span class="archive-card-title">${currentLang === 'en' ? 'Fabric Archive' : '织物档案'}</span>
+        <span class="archive-card-code">${p.code}</span>
+      </div>
+      <div class="archive-card-body">
+        <div class="archive-card-info">
+          <div class="archive-card-row">
+            <div class="archive-card-label">${currentLang === 'en' ? 'Name' : '名称'}</div>
+            <div class="archive-card-text">${name}</div>
+          </div>
+          <div class="archive-card-row">
+            <div class="archive-card-label">${currentLang === 'en' ? 'Highlights' : '亮点'}</div>
+            <div class="archive-card-tags">
+              ${highlights.map(h => `<span class="archive-card-tag">${h}</span>`).join('')}
+            </div>
+          </div>
+          <div class="archive-card-row">
+            <div class="archive-card-label">${currentLang === 'en' ? 'Fabric' : '面料'}</div>
+            <div class="archive-card-text">${fabric}</div>
+          </div>
+          <div class="archive-card-row archive-card-sizes">
+            ${renderSizeTable(p.sizes)}
+          </div>
+        </div>
+        <div class="archive-card-photo">
+          <img src="${p.image}" alt="${name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;font-size:10px;letter-spacing:2px;color:var(--lighter);">IMG</div>
+        </div>
+      </div>
+      <div class="archive-card-footer">
+        <div class="archive-card-price-block">
+          <span class="archive-card-price-label">${retailText}</span>
+          <span class="archive-card-price">¥${p.price}</span>
+        </div>
+        ${displayUrl
+          ? `<a href="${displayUrl}" class="taobao-btn" target="_blank" rel="noopener">${buyText}</a>`
+          : `<span style="font-size:10px;letter-spacing:2px;color:var(--lighter);">${comingText}</span>`
+        }
+      </div>
+    </div>
+  `;
+}
+
+let allProducts = [];
+
+async function loadProducts() {
+  try {
+    const resp = await fetch('products.json?t=' + Date.now());
+    if (!resp.ok) throw new Error('Failed to load products.json');
+    allProducts = await resp.json();
+    renderArchiveGrid('all');
+  } catch (e) {
+    document.getElementById('archiveGrid').innerHTML =
+      '<div class="archive-loading" style="color:var(--light)">' +
+      (currentLang === 'en' ? 'Cannot load products.json<br><br>Make sure the file is in the same directory as the webpage' : '无法加载 products.json<br><br>请确保该文件与网页在同一目录下') +
+      '</div>';
+    console.error('Error loading products.json:', e);
+  }
+}
+
+function renderArchiveGrid(series) {
+  const grid = document.getElementById('archiveGrid');
+  const filtered = series === 'all' ? allProducts : allProducts.filter(p => p.series === series);
+  grid.innerHTML = filtered.map((p, i) => renderCard(p, i)).join('');
+
+  // Re-init reveal observer for new cards
+  requestAnimationFrame(() => {
+    grid.querySelectorAll('.archive-card').forEach(el => {
+      if (el.dataset.revealed) return;
+      revealObserver.observe(el);
+    });
+  });
+}
+
+/* ========== SERIES FILTER ========== */
+const filtersContainer = document.getElementById('seriesFilters');
+filtersContainer.querySelectorAll('.series-filter').forEach(f => {
+  f.addEventListener('click', function() {
+    filtersContainer.querySelectorAll('.series-filter').forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+    renderArchiveGrid(this.dataset.series);
+  });
+});
+
+/* ========== SCROLL PROGRESS ========== */
+const progressBar = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+});
+
+/* ========== NAV SCROLL ========== */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ========== SCROLL REVEAL ========== */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      entry.target.dataset.revealed = '1';
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ========== SMOOTH SCROLL ========== */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+/* ========== LANG TOGGLE BUTTONS ========== */
+document.getElementById('langZh').addEventListener('click', () => switchLang('zh'));
+document.getElementById('langEn').addEventListener('click', () => switchLang('en'));
+
+/* ========== INIT ========== */
+// Restore saved language preference
+const savedLang = localStorage.getItem('d11-lang');
+if (savedLang && savedLang !== 'zh') {
+  switchLang(savedLang);
+} else {
+  loadProducts();
+}
+</script>
+
+</body>
+</html>
