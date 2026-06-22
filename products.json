@@ -6,15 +6,45 @@
     "seriesLabelEn": "Rainforest Frontier",
     "name": "气象探测专家 · 渐变毛衣无袖开衫",
     "nameEn": "Meteorological Scout · Gradient Sleeveless Cardigan",
-    "highlights": ["前胸开口0束缚", "独家版权"],
-    "highlightsEn": ["Front-opening, zero-restriction", "Exclusive copyright"],
+    "highlights": [
+      "前胸开口0束缚",
+      "独家版权"
+    ],
+    "highlightsEn": [
+      "Front-opening, zero-restriction",
+      "Exclusive copyright"
+    ],
     "fabric": "高弹线 · 亲肤柔软",
     "fabricEn": "High-stretch yarn · Skin-friendly & soft",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸33",
+        "胸38",
+        "胸43",
+        "胸48",
+        "胸53"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 99,
     "image": "products/yl_green_sweater.jpg",
@@ -27,15 +57,45 @@
     "seriesLabelEn": "Rainforest Frontier",
     "name": "飞跃者巡逻护卫 · 拼色卫衣假两件纯棉",
     "nameEn": "Leaping Patrol · Color-block Faux-layered Cotton Hoodie",
-    "highlights": ["袖口可翻", "灰黑绿拼色"],
-    "highlightsEn": ["Reversible cuffs", "Grey-black-green color-block"],
+    "highlights": [
+      "袖口可翻",
+      "灰黑绿拼色"
+    ],
+    "highlightsEn": [
+      "Reversible cuffs",
+      "Grey-black-green color-block"
+    ],
     "fabric": "100%纯棉 · 四季透气",
     "fabricEn": "100% Cotton · All-season breathable",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸38", "胸44", "胸49", "胸54", "胸60"],
-      "back": ["背25.5", "背29.5", "背33.5", "背37.5", "背41.5"],
-      "weight": ["5~8斤", "8~12斤", "12~17斤", "17~23斤", "23~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸38",
+        "胸44",
+        "胸49",
+        "胸54",
+        "胸60"
+      ],
+      "back": [
+        "背25.5",
+        "背29.5",
+        "背33.5",
+        "背37.5",
+        "背41.5"
+      ],
+      "weight": [
+        "5~8斤",
+        "8~12斤",
+        "12~17斤",
+        "17~23斤",
+        "23~30斤"
+      ]
     },
     "price": 185,
     "image": "products/yl_hoodie.jpg",
@@ -48,15 +108,45 @@
     "seriesLabelEn": "Rainforest Frontier",
     "name": "植物生长研习生 · 毛呢衬衫&牵引背带",
     "nameEn": "Botany Intern · Wool Shirt & Integrated Harness",
-    "highlights": ["自带反光牵引胸背", "尾部松紧调节"],
-    "highlightsEn": ["Built-in reflective harness", "Adjustable hem"],
+    "highlights": [
+      "自带反光牵引胸背",
+      "尾部松紧调节"
+    ],
+    "highlightsEn": [
+      "Built-in reflective harness",
+      "Adjustable hem"
+    ],
     "fabric": "60%羊毛麦尔登呢 · 保暖耐磨",
     "fabricEn": "60% Wool Melton · Warm & wear-resistant",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸38", "胸44", "胸50", "胸56", "胸62"],
-      "back": ["背25", "背30", "背35", "背40", "背45"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~28斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸38",
+        "胸44",
+        "胸50",
+        "胸56",
+        "胸62"
+      ],
+      "back": [
+        "背25",
+        "背30",
+        "背35",
+        "背40",
+        "背45"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~28斤"
+      ]
     },
     "price": 185,
     "image": "products/yl_wool_shirt.jpg",
@@ -69,15 +159,47 @@
     "seriesLabelEn": "Rainforest Frontier",
     "name": "飞跃者勘探队员 · 爆款冲锋衣户外防水防风",
     "nameEn": "Leaping Explorer · Best-selling Windbreaker Waterproof",
-    "highlights": ["超炫反光条", "可翻立领", "背后小口袋"],
-    "highlightsEn": ["High-visibility reflective stripes", "Stand collar", "Rear utility pocket"],
+    "highlights": [
+      "超炫反光条",
+      "可翻立领",
+      "背后小口袋"
+    ],
+    "highlightsEn": [
+      "High-visibility reflective stripes",
+      "Stand collar",
+      "Rear utility pocket"
+    ],
     "fabric": "三防面料 · 耐磨防风 · 可调节魔术贴",
     "fabricEn": "3-layer protective · Wear-resistant & windproof · Adjustable velcro",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸39", "胸45", "胸50", "胸56", "胸62"],
-      "back": ["背23", "背25", "背28", "背33", "背37"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~28斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸39",
+        "胸45",
+        "胸50",
+        "胸56",
+        "胸62"
+      ],
+      "back": [
+        "背23",
+        "背25",
+        "背28",
+        "背33",
+        "背37"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~28斤"
+      ]
     },
     "price": 265,
     "image": "products/yl_windbreaker.jpg",
@@ -90,15 +212,45 @@
     "seriesLabelEn": "Ocean Voyage",
     "name": "探险号救生员 · 口水巾伊丽莎白圈二合一",
     "nameEn": "Expedition Rescuer · Bib & E-collar 2-in-1",
-    "highlights": ["防水材质", "视线无阻挡"],
-    "highlightsEn": ["Waterproof material", "Unobstructed vision"],
+    "highlights": [
+      "防水材质",
+      "视线无阻挡"
+    ],
+    "highlightsEn": [
+      "Waterproof material",
+      "Unobstructed vision"
+    ],
     "fabric": "防水材质 · 松紧调节防脱落",
     "fabricEn": "Waterproof · Adjustable elastic, anti-slip",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["颈20", "颈25", "颈30", "颈35", "颈40"],
-      "back": ["—", "—", "—", "—", "—"],
-      "weight": ["2~6斤", "6~10斤", "10~14斤", "14~18斤", "18~24斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "颈20",
+        "颈25",
+        "颈30",
+        "颈35",
+        "颈40"
+      ],
+      "back": [
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      "weight": [
+        "2~6斤",
+        "6~10斤",
+        "10~14斤",
+        "14~18斤",
+        "18~24斤"
+      ]
     },
     "price": 45,
     "image": "products/hy_collar.jpg",
@@ -111,15 +263,47 @@
     "seriesLabelEn": "Ocean Voyage",
     "name": "探险号瞭望者 · 无袖软毛衣中小型猫狗0束缚",
     "nameEn": "Expedition Lookout · Sleeveless Soft Sweater SM Dogs & Cats",
-    "highlights": ["前胸开口原创版型", "超软兔毛", "猫狗通用"],
-    "highlightsEn": ["Original front-opening design", "Ultra-soft rabbit fur", "Cats & dogs"],
+    "highlights": [
+      "前胸开口原创版型",
+      "超软兔毛",
+      "猫狗通用"
+    ],
+    "highlightsEn": [
+      "Original front-opening design",
+      "Ultra-soft rabbit fur",
+      "Cats & dogs"
+    ],
     "fabric": "超软兔毛 · 不掉毛不起球 · 弹性大",
     "fabricEn": "Ultra-soft rabbit fur · Non-shedding & pill-resistant · High-stretch",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸33",
+        "胸38",
+        "胸43",
+        "胸48",
+        "胸53"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 99,
     "image": "products/hy_blue_sweater.jpg",
@@ -132,15 +316,47 @@
     "seriesLabelEn": "Ocean Voyage",
     "name": "探险号水手 · 棉服斗篷绑带披风狗狗冬季外套",
     "nameEn": "Expedition Sailor · Quilted Cloak Dog Winter Coat",
-    "highlights": ["多种捆绑方式", "适合各体型", "可叠穿"],
-    "highlightsEn": ["Multiple wrapping styles", "Fits all body types", "Layerable"],
+    "highlights": [
+      "多种捆绑方式",
+      "适合各体型",
+      "可叠穿"
+    ],
+    "highlightsEn": [
+      "Multiple wrapping styles",
+      "Fits all body types",
+      "Layerable"
+    ],
     "fabric": "棉服填充保暖 · 多季节可用",
     "fabricEn": "Cotton-padded warmth · Multi-season",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸40", "胸46", "胸52", "胸58", "胸64"],
-      "back": ["背28", "背33", "背38", "背43", "背48"],
-      "weight": ["6~10斤", "10~16斤", "16~22斤", "22~28斤", "28~35斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸40",
+        "胸46",
+        "胸52",
+        "胸58",
+        "胸64"
+      ],
+      "back": [
+        "背28",
+        "背33",
+        "背38",
+        "背43",
+        "背48"
+      ],
+      "weight": [
+        "6~10斤",
+        "10~16斤",
+        "16~22斤",
+        "22~28斤",
+        "28~35斤"
+      ]
     },
     "price": 315,
     "image": "products/hy_quilted_poncho.png",
@@ -153,15 +369,45 @@
     "seriesLabelEn": "Ocean Voyage",
     "name": "探险号潜水员 · 户外牵引背包手提多功能宠物服装便携",
     "nameEn": "Expedition Diver · Multi-function Harness Bag Carrier",
-    "highlights": ["可背可手提可牵引", "承重10kg"],
-    "highlightsEn": ["Wearable as backpack, tote & harness", "10kg load capacity"],
+    "highlights": [
+      "可背可手提可牵引",
+      "承重10kg"
+    ],
+    "highlightsEn": [
+      "Wearable as backpack, tote & harness",
+      "10kg load capacity"
+    ],
     "fabric": "内侧透气网布 · 高承重结构",
     "fabricEn": "Inner breathable mesh · High-load structure",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸38", "胸45", "胸52", "胸58", "胸64"],
-      "back": ["背30", "背35", "背40", "背45", "背50"],
-      "weight": ["≤4kg", "≤6kg", "≤8kg", "≤10kg", "≤10kg"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸38",
+        "胸45",
+        "胸52",
+        "胸58",
+        "胸64"
+      ],
+      "back": [
+        "背30",
+        "背35",
+        "背40",
+        "背45",
+        "背50"
+      ],
+      "weight": [
+        "≤4kg",
+        "≤6kg",
+        "≤8kg",
+        "≤10kg",
+        "≤10kg"
+      ]
     },
     "price": 465,
     "image": "products/hy_harness_vest.jpg",
@@ -174,15 +420,47 @@
     "seriesLabelEn": "Desert Tracker",
     "name": "沙漠向导 · 狗狗防晒服UPF50+两穿设计超轻超薄",
     "nameEn": "Desert Guide · Dog Sun-protective UPF50+ Reversible Ultralight",
-    "highlights": ["SPF50+", "四面弹透气", "连帽两穿"],
-    "highlightsEn": ["UPF50+", "4-way stretch breathable", "Hooded, reversible"],
+    "highlights": [
+      "SPF50+",
+      "四面弹透气",
+      "连帽两穿"
+    ],
+    "highlightsEn": [
+      "UPF50+",
+      "4-way stretch breathable",
+      "Hooded, reversible"
+    ],
     "fabric": "专业防晒涂层 · 高弹性 · 户外必备",
     "fabricEn": "Pro UV-coating · High elasticity · Outdoor essential",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸36", "胸42", "胸48", "胸54", "胸60"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸36",
+        "胸42",
+        "胸48",
+        "胸54",
+        "胸60"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 285,
     "image": "products/sm_sun_protection.png",
@@ -195,15 +473,47 @@
     "seriesLabelEn": "Desert Tracker",
     "name": "沙海越野者 · 猫狗无袖毛领毛衣超软小众设计版型秋冬",
     "nameEn": "Dune Off-roader · Sleeveless Faux-fur Collar Sweater SM Cats & Dogs",
-    "highlights": ["胸前开叉原创版型", "超软兔毛", "猫狗通用"],
-    "highlightsEn": ["Original front-slit design", "Ultra-soft rabbit fur", "Cats & dogs"],
+    "highlights": [
+      "胸前开叉原创版型",
+      "超软兔毛",
+      "猫狗通用"
+    ],
+    "highlightsEn": [
+      "Original front-slit design",
+      "Ultra-soft rabbit fur",
+      "Cats & dogs"
+    ],
     "fabric": "超软兔毛 · 不掉毛不起球 · 弹性大",
     "fabricEn": "Ultra-soft rabbit fur · Non-shedding & pill-resistant · High-stretch",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸33",
+        "胸38",
+        "胸43",
+        "胸48",
+        "胸53"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 109,
     "image": "products/sm_fur_sweater.png",
@@ -216,15 +526,47 @@
     "seriesLabelEn": "Desert Tracker",
     "name": "生态管治员 · 狗狗毛绒提花卫衣保暖立领超绝质感冬季",
     "nameEn": "Eco Ranger · Dog Plush Jacquard Hoodie Stand Collar Winter",
-    "highlights": ["特色毛毛交叉结", "超软毛茸茸", "预留牵引穿孔"],
-    "highlightsEn": ["Signature fur cross-knot", "Ultra-plush texture", "Pre-cut leash opening"],
+    "highlights": [
+      "特色毛毛交叉结",
+      "超软毛茸茸",
+      "预留牵引穿孔"
+    ],
+    "highlightsEn": [
+      "Signature fur cross-knot",
+      "Ultra-plush texture",
+      "Pre-cut leash opening"
+    ],
     "fabric": "提花工艺毛绒 · 内衬亲肤棉",
     "fabricEn": "Jacquard plush · Skin-friendly cotton lining",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸38", "胸44", "胸49", "胸54", "胸60"],
-      "back": ["背25", "背29", "背33", "背37", "背41"],
-      "weight": ["5~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸38",
+        "胸44",
+        "胸49",
+        "胸54",
+        "胸60"
+      ],
+      "back": [
+        "背25",
+        "背29",
+        "背33",
+        "背37",
+        "背41"
+      ],
+      "weight": [
+        "5~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 245,
     "image": "products/sm_fleece_hoodie.jpg",
@@ -237,15 +579,47 @@
     "seriesLabelEn": "Desert Tracker",
     "name": "环境卫士 · 可穿戴捡拾袋包+口水巾二合一狗狗出行便携",
     "nameEn": "Environment Guardian · Wearable Poop-bag & Bib 2-in-1 Portable",
-    "highlights": ["袋包+口水巾一体式", "出行便携", "多色可选"],
-    "highlightsEn": ["Bag & bib all-in-one", "Travel-friendly", "Multiple colors"],
+    "highlights": [
+      "袋包+口水巾一体式",
+      "出行便携",
+      "多色可选"
+    ],
+    "highlightsEn": [
+      "Bag & bib all-in-one",
+      "Travel-friendly",
+      "Multiple colors"
+    ],
     "fabric": "防水面料 · 可调节绑带",
     "fabricEn": "Waterproof fabric · Adjustable straps",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["颈20", "颈25", "颈30", "颈35", "颈40"],
-      "back": ["—", "—", "—", "—", "—"],
-      "weight": ["2~6斤", "6~10斤", "10~14斤", "14~18斤", "18~24斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "颈20",
+        "颈25",
+        "颈30",
+        "颈35",
+        "颈40"
+      ],
+      "back": [
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      "weight": [
+        "2~6斤",
+        "6~10斤",
+        "10~14斤",
+        "14~18斤",
+        "18~24斤"
+      ]
     },
     "price": 68,
     "image": "products/sm_bib.png",
@@ -258,15 +632,49 @@
     "seriesLabelEn": "Polar Expedition",
     "name": "洒水车司机 · 猫狗凉凉衣防掉毛网眼透气干湿两穿",
     "nameEn": "Sprinkler Driver · Dog & Cat Cooling Mesh Anti-shedding Dry/Wet",
-    "highlights": ["冰感干湿两穿", "前开叉0束缚", "物理防晒", "独家版型"],
-    "highlightsEn": ["Ice-cool dry/wet dual-wear", "Front-slit zero-restriction", "Physical sun protection", "Exclusive design"],
+    "highlights": [
+      "冰感干湿两穿",
+      "前开叉0束缚",
+      "物理防晒",
+      "独家版型"
+    ],
+    "highlightsEn": [
+      "Ice-cool dry/wet dual-wear",
+      "Front-slit zero-restriction",
+      "Physical sun protection",
+      "Exclusive design"
+    ],
     "fabric": "高弹网眼 · 冰感科技纤维",
     "fabricEn": "High-stretch mesh · Ice-cool tech fiber",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸33",
+        "胸38",
+        "胸43",
+        "胸48",
+        "胸53"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 88,
     "image": "products/tx_mesh_coat.png",
@@ -279,15 +687,49 @@
     "seriesLabelEn": "Polar Expedition",
     "name": "破冰船船员 · 夏季猫狗防晒UPF100+无袖旋转斜裁可调节",
     "nameEn": "Icebreaker Crew · Summer UPF100+ Sleeveless Diagonal-cut Adjustable",
-    "highlights": ["UPF100+", "无袖旋转斜裁", "超轻透气", "可调节"],
-    "highlightsEn": ["UPF100+", "Sleeveless diagonal cut", "Ultralight breathable", "Adjustable"],
+    "highlights": [
+      "UPF100+",
+      "无袖旋转斜裁",
+      "超轻透气",
+      "可调节"
+    ],
+    "highlightsEn": [
+      "UPF100+",
+      "Sleeveless diagonal cut",
+      "Ultralight breathable",
+      "Adjustable"
+    ],
     "fabric": "专业防晒面料 · UPF100+防护 · 高弹力",
     "fabricEn": "Pro UV fabric · UPF100+ protection · High elasticity",
     "sizes": {
-      "headers": ["S", "M", "L", "XL", "XXL"],
-      "chest": ["胸33", "胸38", "胸43", "胸48", "胸53"],
-      "back": ["背26", "背30", "背34", "背38", "背42"],
-      "weight": ["4~8斤", "8~12斤", "12~16斤", "16~22斤", "22~30斤"]
+      "headers": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "chest": [
+        "胸33",
+        "胸38",
+        "胸43",
+        "胸48",
+        "胸53"
+      ],
+      "back": [
+        "背26",
+        "背30",
+        "背34",
+        "背38",
+        "背42"
+      ],
+      "weight": [
+        "4~8斤",
+        "8~12斤",
+        "12~16斤",
+        "16~22斤",
+        "22~30斤"
+      ]
     },
     "price": 128,
     "image": "products/tx_polar_cool.png",
