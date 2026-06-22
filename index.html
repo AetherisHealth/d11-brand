@@ -779,11 +779,18 @@ function renderArchiveGrid(series) {
   const filtered = series === 'all' ? allProducts : allProducts.filter(p => p.series === series);
   grid.innerHTML = filtered.map((p, i) => renderCard(p, i)).join('');
 
-  // Re-init reveal observer for new cards
+  // Re-init reveal observer for new cards & force lazy images to load
   requestAnimationFrame(() => {
     grid.querySelectorAll('.archive-card').forEach(el => {
       if (el.dataset.revealed) return;
       revealObserver.observe(el);
+    });
+    // Mobile fix: lazy images may not trigger after scrollIntoView; force eager load for visible ones
+    grid.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      const rect = img.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        img.loading = 'eager';
+      }
     });
   });
 }
